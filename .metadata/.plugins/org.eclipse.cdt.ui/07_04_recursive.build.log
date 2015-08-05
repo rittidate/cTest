@@ -1,0 +1,15 @@
+01:31:53 **** Build of configuration Debug for project 07_04_recursive ****
+make all 
+Building file: ../07_04.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"07_04.d" -MT"07_04.d" -o "07_04.o" "../07_04.c"
+Finished building: ../07_04.c
+ 
+Building target: 07_04_recursive
+Invoking: MacOS X C Linker
+gcc  -o "07_04_recursive"  ./07_04.o   
+Finished building target: 07_04_recursive
+ 
+
+01:31:53 Build Finished (took 110ms)
+

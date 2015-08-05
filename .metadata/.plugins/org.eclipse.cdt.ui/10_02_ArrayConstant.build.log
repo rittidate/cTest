@@ -1,0 +1,25 @@
+02:00:51 **** Build of configuration Debug for project 10_02_ArrayConstant ****
+make all 
+Building file: ../10_02.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"10_02.d" -MT"10_02.d" -o "10_02.o" "../10_02.c"
+../10_02.c:17:7: warning: unused variable 'scores' [-Wunused-variable]
+        int  scores[MAX_SCORES];      //an array that holds a maximum of 20 integers
+             ^
+../10_02.c:18:9: warning: unused variable 'word' [-Wunused-variable]
+        char   word[MAX_LETTERS];     //an array of characters (a.k.a string)
+               ^
+../10_02.c:19:9: warning: unused variable 'data' [-Wunused-variable]
+        double data[MAX_DATA_POINTS]; //an array to store up to 50 data points
+               ^
+Finished building: ../10_02.c
+3 warnings generated.
+ 
+Building target: 10_02_ArrayConstant
+Invoking: MacOS X C Linker
+gcc  -o "10_02_ArrayConstant"  ./10_02.o   
+Finished building target: 10_02_ArrayConstant
+ 
+
+02:00:51 Build Finished (took 114ms)
+

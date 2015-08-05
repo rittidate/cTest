@@ -1,0 +1,17 @@
+01:31:24 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+Building file: ../lab02-src/main_stack.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lab02-src/main_stack.d" -MT"lab02-src/main_stack.d" -o "lab02-src/main_stack.o" "../lab02-src/main_stack.c"
+In file included from ../lab02-src/main_stack.c:4:
+../lab02-src/stack.h:16:3: error: typedef redefinition with different types ('struct stack_t' vs 'struct __darwin_sigaltstack')
+} stack_t;
+  ^
+/usr/include/sys/_types/_sigaltstack.h:42:29: note: previous definition is here
+typedef _STRUCT_SIGALTSTACK     stack_t; /* [???] signal stack */
+                                ^
+1 error generated.
+make: *** [lab02-src/main_stack.o] Error 1
+
+01:31:24 Build Finished (took 120ms)
+

@@ -1,0 +1,16 @@
+16:33:37 **** Incremental Build of configuration Debug for project Working ****
+make all 
+Building file: ../test.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"test.d" -MT"test.d" -o "test.o" "../test.cpp"
+dyld: Library not loaded: /usr/local/lib/libmpc.3.dylib
+  Referenced from: /Users/capuchino/hpc-gcc/bin/../libexec/gcc/x86_64-apple-darwin14.4.0/5.1.0/cc1plus
+  Reason: image not found
+g++: internal compiler error: Trace/BPT trap: 5 (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
+make: *** [test.o] Error 4
+
+16:33:37 Build Finished (took 167ms)
+

@@ -1,0 +1,15 @@
+01:31:54 **** Build of configuration Debug for project 08_06_StatementPractise ****
+make all 
+Building file: ../08_06.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"08_06.d" -MT"08_06.d" -o "08_06.o" "../08_06.c"
+Finished building: ../08_06.c
+ 
+Building target: 08_06_StatementPractise
+Invoking: MacOS X C Linker
+gcc  -o "08_06_StatementPractise"  ./08_06.o   
+Finished building target: 08_06_StatementPractise
+ 
+
+01:31:54 Build Finished (took 109ms)
+

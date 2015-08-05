@@ -1,0 +1,15 @@
+01:31:51 **** Incremental Build of configuration Debug for project 06_04_BitOperator ****
+make all 
+Building file: ../06_04.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"06_04.d" -MT"06_04.d" -o "06_04.o" "../06_04.c"
+Finished building: ../06_04.c
+ 
+Building target: 06_04_BitOperator
+Invoking: MacOS X C Linker
+gcc  -o "06_04_BitOperator"  ./06_04.o   
+Finished building target: 06_04_BitOperator
+ 
+
+01:31:51 Build Finished (took 116ms)
+

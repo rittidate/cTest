@@ -1,0 +1,15 @@
+09:18:11 **** Build of configuration Debug for project ext_assert ****
+make all 
+Building file: ../assert.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"assert.d" -MT"assert.d" -o "assert.o" "../assert.c"
+Finished building: ../assert.c
+ 
+Building target: ext_assert
+Invoking: MacOS X C Linker
+gcc  -o "ext_assert"  ./assert.o   
+Finished building target: ext_assert
+ 
+09:18:14 **** Incremental Build of configuration Debug for project ext_assert ****
+make all 
+make: Nothing to be done for `all'.

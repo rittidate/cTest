@@ -1,0 +1,14 @@
+01:46:45 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+Building target: Lab1
+Invoking: MacOS X C Linker
+gcc  -o "Lab1"  ./lab01-src/list.o ./lab01-src/main.o ./lab01-src/simple.o   
+duplicate symbol _main in:
+    ./lab01-src/main.o
+    ./lab01-src/simple.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Lab1] Error 1
+
+01:46:45 Build Finished (took 68ms)
+

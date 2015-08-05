@@ -1,0 +1,52 @@
+01:31:49 **** Build of configuration Debug for project 03_01_DataType ****
+make all 
+Building file: ../03_01.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"03_01.d" -MT"03_01.d" -o "03_01.o" "../03_01.c"
+../03_01.c:25:17: warning: unused variable 'number6' [-Wunused-variable]
+                unsigned long   number6;
+                                ^
+../03_01.c:20:10: warning: unused variable 'number1' [-Wunused-variable]
+                int                             number1;
+                                                ^
+../03_01.c:30:16: warning: unused variable 'number9' [-Wunused-variable]
+                long double             number9;
+                                        ^
+../03_01.c:24:11: warning: unused variable 'number5' [-Wunused-variable]
+                long                            number5;
+                                                ^
+../03_01.c:21:17: warning: unused variable 'number2' [-Wunused-variable]
+                unsigned int            number2;
+                                        ^
+Finished building: ../03_01.c
+../03_01.c:17:11: warning: unused variable 'symbol1' [-Wunused-variable]
+                char                    symbol1;
+                                        ^
+../03_01.c:29:12: warning: unused variable 'number8' [-Wunused-variable]
+                double                  number8;
+                                        ^
+ 
+../03_01.c:22:11: warning: unused variable 'number3' [-Wunused-variable]
+                short                   number3;
+                                        ^
+../03_01.c:18:17: warning: unused variable 'symbol2' [-Wunused-variable]
+                unsigned char   symbol2;
+                                ^
+../03_01.c:28:11: warning: unused variable 'number7' [-Wunused-variable]
+Building target: 03_01_DataType
+                float                   number7;
+                                        ^
+../03_01.c:23:20: warning: unused variable 'number4' [-Wunused-variable]
+                unsigned short          number4;
+                                        ^
+../03_01.c:19:16: warning: unused variable 'symbol3' [-Wunused-variable]
+Invoking: MacOS X C Linker
+                signed char             symbol3;
+gcc  -o "03_01_DataType"  ./03_01.o   
+                                        ^
+12 warnings generated.
+Finished building target: 03_01_DataType
+ 
+
+01:31:50 Build Finished (took 110ms)
+

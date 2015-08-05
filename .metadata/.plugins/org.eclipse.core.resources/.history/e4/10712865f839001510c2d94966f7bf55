@@ -1,0 +1,54 @@
+#include <assert.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+#include "list.h"
+
+void 
+ListInit(list_t * plist)
+{
+	assert(plist != NULL);
+	/*
+	 * initialise the list data structure. Check the simple.c file how
+	 * list_t is initialised. Why do we have to do this?
+	 */
+}
+int 
+ListInsert(list_t * plist, int num)
+{
+	/* any required local vars go here */
+	assert(plist != NULL);
+	/*
+	 * allocate memory for a new list element and return FAILURE if
+	 * malloc() failed.
+	 * 
+	 * Check to see how this function was used in main() to determine what
+	 * value to return for a FAILURE
+	 * 
+	 * Here you'll need to write some code to search for the correct place
+	 * within the linked list to insert the new element. Finally return a
+	 * value indicating SUCCESS
+	 */
+}
+void 
+ListDisplay(list_t * plist)
+{
+	/* any required local vars go here */
+	assert(plist != NULL);
+	/*
+	 * loop through all existing elements within the linked list and
+	 * display them one per line
+	 */
+}
+void 
+ListFree(list_t * plist)
+{
+	assert(plist != NULL);
+	/*
+	 * Need to systematically link through the free()ing the memory used
+	 * by nodes, but not before copying any required information out of
+	 * the node. eg. pointer to next node. so that we can continue to
+	 * free the list
+	 */
+}
+

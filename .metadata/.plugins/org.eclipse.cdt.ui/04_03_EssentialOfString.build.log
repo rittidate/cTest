@@ -1,0 +1,28 @@
+01:31:50 **** Incremental Build of configuration Debug for project 04_03_EssentialOfString ****
+make all 
+Building file: ../04_03.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"04_03.d" -MT"04_03.d" -o "04_03.o" "../04_03.c"
+../04_03.c:21:4: warning: implicitly declaring library function 'strcpy' with type 'char *(char *, const char *)'
+          strcpy(string1, "Anybody");
+          ^
+../04_03.c:21:4: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+../04_03.c:24:15: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)'
+          int len1 = strlen(string1);
+                     ^
+../04_03.c:24:15: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+../04_03.c:29:37: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)'
+          printf("Return Value is : %d\n", strcmp( string1, string2)); //string1 is shorter than string2
+                                           ^
+../04_03.c:29:37: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+3 warnings generated.
+Finished building: ../04_03.c
+ 
+Building target: 04_03_EssentialOfString
+Invoking: MacOS X C Linker
+gcc  -o "04_03_EssentialOfString"  ./04_03.o   
+Finished building target: 04_03_EssentialOfString
+ 
+
+01:31:50 Build Finished (took 111ms)
+

@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
+typedef struct node_t {
+	int             value;
+	struct node_t  *next;
+} node_t;
+
+typedef struct {
+	int             count;
+	struct node_t*  head;
+} list_t;
+
+int
+main()
+{
+	int             num;
+	node_t         *new, *current, *previous, *next;
+	list_t          lst;
+
+	lst.count = 0;
+	lst.head = NULL;
+	new = NULL;
+
+	while (fscanf(stdin, "%d", &num) == 1) {
+		if ((new = malloc(sizeof(node_t))) == NULL) {
+			fprintf(stderr, "Memory allocation for list insert failed! "
+				"Aborting data entry !\n");
+			break;
+		}
+		current = lst->head;
+		previous = NULL;
+
+		/* Search to find where in insert new list node */
+		while (current->value < num) {
+			previous = current;
+			current = current->next;
+		}
+		new->value = num;
+		new->next = current;
+		lst.count++;
+
+		if (previous == NULL) {
+			lst.head = new;
+		} else {
+			previous->next = new;
+		}
+	}
+	/* Display integers in linked list */
+	current = lst.head;
+	printf("List has %d elements:\n", lst.count);
+	while (current != NULL) {
+		printf("%d\n", current->value);
+		current = current->next;
+	}
+	/* Deallocate memory used by list nodes */
+	current = lst.head;
+	while (current != NULL) {
+		next = current->next;
+		free(current);
+		current = next;
+	}
+	return EXIT_SUCCESS;
+}
+

@@ -1,0 +1,24 @@
+/* stack.h */
+
+#ifndef STACK_H
+
+#define INITIAL_STACK_SIZE 5
+#define INPUT_BUFFER_SIZE 100
+
+#define OP_STACK_PUSH		0
+#define OP_STACK_POP		1
+#define OP_STACK_END		2
+
+typedef struct {
+	size_t          size;
+	int             top;
+	int            *items;
+}               stack_t;
+
+void            stack_init(stack_t *, size_t size);
+void            stack_push(stack_t * stack, int item);
+int             stack_pop(stack_t * stack);
+int             stack_is_empty(stack_t * stack);
+void            stack_free(stack_t *);
+
+#endif

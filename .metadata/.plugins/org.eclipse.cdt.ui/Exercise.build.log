@@ -1,0 +1,6 @@
+01:31:55 **** Incremental Build of configuration Build (GNU) for project Exercise ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+01:31:55 Build Finished (took 68ms)
+

@@ -1,0 +1,1 @@
+assert.d: ../assert.c

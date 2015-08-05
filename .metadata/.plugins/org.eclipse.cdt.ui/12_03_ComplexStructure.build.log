@@ -1,0 +1,6 @@
+11:40:15 **** Incremental Build of configuration Debug for project 12_03_ComplexStructure ****
+make all 
+make: Nothing to be done for `all'.
+
+11:40:15 Build Finished (took 61ms)
+

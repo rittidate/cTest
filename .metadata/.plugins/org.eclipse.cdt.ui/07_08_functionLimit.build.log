@@ -1,0 +1,15 @@
+01:31:53 **** Build of configuration Debug for project 07_08_functionLimit ****
+make all 
+Building file: ../07_08.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"07_08.d" -MT"07_08.d" -o "07_08.o" "../07_08.c"
+Finished building: ../07_08.c
+ 
+Building target: 07_08_functionLimit
+Invoking: MacOS X C Linker
+gcc  -o "07_08_functionLimit"  ./07_08.o   
+Finished building target: 07_08_functionLimit
+ 
+
+01:31:53 Build Finished (took 109ms)
+

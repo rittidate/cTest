@@ -1,0 +1,15 @@
+01:31:52 **** Build of configuration Debug for project 07_01_Function ****
+make all 
+Building file: ../07_01.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"07_01.d" -MT"07_01.d" -o "07_01.o" "../07_01.c"
+Finished building: ../07_01.c
+ 
+Building target: 07_01_Function
+Invoking: MacOS X C Linker
+gcc  -o "07_01_Function"  ./07_01.o   
+Finished building target: 07_01_Function
+ 
+
+01:31:52 Build Finished (took 115ms)
+

@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "stack.h"
+
+static int
+get_next_operation(FILE * fp, int *number)
+{
+	char            buffer[INPUT_BUFFER_SIZE];
+
+	if (fscanf(fp, "%s", buffer) == 1) {
+		if (buffer[0] == '*') {
+			return OP_STACK_POP;
+		} else if (sscanf(buffer, "%d", number) == 1) {
+			return OP_STACK_PUSH;
+		} else {
+			fprintf(stderr, "Do not recognize %s\n", buffer);
+			exit(EXIT_FAILURE);
+		}
+	} else {
+		if (feof(fp)) {
+			return OP_STACK_END;
+		} else {
+			fprintf(stderr, "IO error.\n");
+			exit(EXIT_FAILURE);
+		}
+	}
+}
+
+int
+main(int argc, char **argv)
+{
+	int             op;
+	int             number;
+	stack_t         st;
+
+	//stack_init(&st, INITIAL_STACK_SIZE);
+
+//	while ((op = get_next_operation(stdin, &number)) != OP_STACK_END) {
+//		if (op == OP_STACK_PUSH) {
+//			stack_push(&st, number);
+//		} else if (op == OP_STACK_POP) {
+//			if (stack_is_empty(&st)) {
+//				printf("POP from empty stack.\n");
+//			} else {
+//				printf("%d\n", stack_pop(&st));
+//			}
+//		} else {
+//			fprintf(stderr, "Unexpected operation.\n");
+//			stack_free(&st);
+//			exit(EXIT_FAILURE);
+//		}
+//	}
+//
+//	stack_free(&st);
+
+	return EXIT_SUCCESS;
+}

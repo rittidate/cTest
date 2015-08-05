@@ -1,0 +1,15 @@
+11:15:20 **** Build of configuration Debug for project 12_01_Structure ****
+make all 
+Building file: ../12_01.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"12_01.d" -MT"12_01.d" -o "12_01.o" "../12_01.c"
+Finished building: ../12_01.c
+ 
+Building target: 12_01_Structure
+Invoking: MacOS X C Linker
+gcc  -o "12_01_Structure"  ./12_01.o   
+Finished building target: 12_01_Structure
+ 
+
+11:15:21 Build Finished (took 114ms)
+

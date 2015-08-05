@@ -1,0 +1,1 @@
+myLibrary.d: ../myLibrary.c

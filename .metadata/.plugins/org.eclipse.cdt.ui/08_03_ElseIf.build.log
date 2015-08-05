@@ -1,0 +1,15 @@
+01:31:54 **** Build of configuration Debug for project 08_03_ElseIf ****
+make all 
+Building file: ../08_03.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"08_03.d" -MT"08_03.d" -o "08_03.o" "../08_03.c"
+Finished building: ../08_03.c
+ 
+Building target: 08_03_ElseIf
+Invoking: MacOS X C Linker
+gcc  -o "08_03_ElseIf"  ./08_03.o   
+Finished building target: 08_03_ElseIf
+ 
+
+01:31:54 Build Finished (took 110ms)
+

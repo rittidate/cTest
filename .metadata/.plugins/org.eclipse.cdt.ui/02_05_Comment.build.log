@@ -1,0 +1,22 @@
+01:31:49 **** Build of configuration Debug for project 02_05_Comment ****
+make all 
+Building file: ../02_05.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"02_05.d" -MT"02_05.d" -o "02_05.o" "../02_05.c"
+../02_05.c:31:7: warning: unused variable 'roles' [-Wunused-variable]
+        char roles[10];         //This string will be assigned value at runtime; the values can be: admin, contributor, viewer
+             ^
+../02_05.c:30:6: warning: unused variable 'counter' [-Wunused-variable]
+        int counter = 0;        //This is used to count the number of times certain tasks are performed
+            ^
+2 warnings generated.
+Finished building: ../02_05.c
+ 
+Building target: 02_05_Comment
+Invoking: MacOS X C Linker
+gcc  -o "02_05_Comment"  ./02_05.o   
+Finished building target: 02_05_Comment
+ 
+
+01:31:49 Build Finished (took 113ms)
+

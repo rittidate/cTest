@@ -1,0 +1,15 @@
+01:31:53 **** Build of configuration Debug for project 08_01_IfStatement ****
+make all 
+Building file: ../08_01.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"08_01.d" -MT"08_01.d" -o "08_01.o" "../08_01.c"
+Finished building: ../08_01.c
+ 
+Building target: 08_01_IfStatement
+Invoking: MacOS X C Linker
+gcc  -o "08_01_IfStatement"  ./08_01.o   
+Finished building target: 08_01_IfStatement
+ 
+
+01:31:53 Build Finished (took 116ms)
+

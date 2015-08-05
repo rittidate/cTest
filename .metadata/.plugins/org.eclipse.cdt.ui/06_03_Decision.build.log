@@ -1,0 +1,15 @@
+01:31:51 **** Incremental Build of configuration Debug for project 06_03_Decision ****
+make all 
+Building file: ../06_03.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"06_03.d" -MT"06_03.d" -o "06_03.o" "../06_03.c"
+Finished building: ../06_03.c
+ 
+Building target: 06_03_Decision
+Invoking: MacOS X C Linker
+gcc  -o "06_03_Decision"  ./06_03.o   
+Finished building target: 06_03_Decision
+ 
+
+01:31:51 Build Finished (took 110ms)
+
